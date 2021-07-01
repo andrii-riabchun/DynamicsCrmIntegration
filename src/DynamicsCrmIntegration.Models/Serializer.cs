@@ -5,7 +5,6 @@ using System.Linq;
 using System.Reflection;
 using Microsoft.Xrm.Sdk;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
 
@@ -152,13 +151,6 @@ namespace DynamicsCrmIntegration.Models
                     kvp => kvpKeyProp.GetValue(kvp),
                     kvp => kvpValueProp.GetValue(kvp)
                 );
-            }
-
-            private static Action<object, object, object> GetAdder(Type objectType)
-            {
-                var method = objectType.GetMethod(nameof(DataCollection<int, int>.Add));
-
-                return (Action<object, object, object>)method.CreateDelegate(typeof(Action<object, object, object>));
             }
         }
     }
