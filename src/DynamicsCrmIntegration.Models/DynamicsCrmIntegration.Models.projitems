@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>4e71e191-5b28-40bb-80a9-e73bf99d0e27</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>DynamicsCrmIntegration.Models2</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AssociateModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CreateModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DeleteModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DisassociateModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ErrorResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExecuteRequestModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RetrieveModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RetrieveMultipleModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Serializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UpdateModel.cs" />
+  </ItemGroup>
+</Project>
