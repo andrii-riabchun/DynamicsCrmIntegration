@@ -29,8 +29,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\DynamicsCrmIntegation.Server\DynamicsCrmIntegration.Server.csproj" />
     <ProjectReference Include="..\..\src\DynamicsCrmIntegration.Client\DynamicsCrmIntegration.Client.csproj" />
+    <ProjectReference Include="..\..\src\DynamicsCrmIntergation.Server\DynamicsCrmIntegration.Server.csproj" />
   </ItemGroup>
 
   <Target Name="ChangeAliasesOfStrongNameAssemblies" BeforeTargets="FindReferenceAssembliesForReferences;ResolveReferences">

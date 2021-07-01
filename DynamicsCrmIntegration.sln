@@ -7,18 +7,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1F905661-B67
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{97822908-59E6-4DD2-B0F6-2AB3A13D84E8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicsCrmIntegration.Server", "src\DynamicsCrmIntegation.Server\DynamicsCrmIntegration.Server.csproj", "{BC03F264-BD6C-4495-8DFC-8DFEC1C94A71}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicsCrmIntegration.Client", "src\DynamicsCrmIntegration.Client\DynamicsCrmIntegration.Client.csproj", "{BEBD30F2-E368-4DDD-9755-1B7B7ABAB6CA}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DynamicsCrmIntegration.Models", "src\DynamicsCrmIntegration.Models\DynamicsCrmIntegration.Models.shproj", "{4E71E191-5B28-40BB-80A9-E73BF99D0E27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicsCrmIntegration.IntegrationTests", "test\DynamicsCrmIntegration.IntegrationTests\DynamicsCrmIntegration.IntegrationTests.csproj", "{8472DFA7-C163-445A-83FE-79A20F0D1662}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicsCrmIntegration.IntegrationTests", "test\DynamicsCrmIntegration.IntegrationTests\DynamicsCrmIntegration.IntegrationTests.csproj", "{8472DFA7-C163-445A-83FE-79A20F0D1662}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicsCrmIntegration.Server", "src\DynamicsCrmIntergation.Server\DynamicsCrmIntegration.Server.csproj", "{2EF61FF8-B964-4457-8A1F-CE3E6939F16E}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		src\DynamicsCrmIntegration.Models\DynamicsCrmIntegration.Models.projitems*{2ef61ff8-b964-4457-8a1f-ce3e6939f16e}*SharedItemsImports = 5
 		src\DynamicsCrmIntegration.Models\DynamicsCrmIntegration.Models.projitems*{4e71e191-5b28-40bb-80a9-e73bf99d0e27}*SharedItemsImports = 13
-		src\DynamicsCrmIntegration.Models\DynamicsCrmIntegration.Models.projitems*{bc03f264-bd6c-4495-8dfc-8dfec1c94a71}*SharedItemsImports = 5
 		src\DynamicsCrmIntegration.Models\DynamicsCrmIntegration.Models.projitems*{bebd30f2-e368-4ddd-9755-1b7b7abab6ca}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,10 +26,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BC03F264-BD6C-4495-8DFC-8DFEC1C94A71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BC03F264-BD6C-4495-8DFC-8DFEC1C94A71}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BC03F264-BD6C-4495-8DFC-8DFEC1C94A71}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BC03F264-BD6C-4495-8DFC-8DFEC1C94A71}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BEBD30F2-E368-4DDD-9755-1B7B7ABAB6CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BEBD30F2-E368-4DDD-9755-1B7B7ABAB6CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEBD30F2-E368-4DDD-9755-1B7B7ABAB6CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -38,15 +34,19 @@ Global
 		{8472DFA7-C163-445A-83FE-79A20F0D1662}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8472DFA7-C163-445A-83FE-79A20F0D1662}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8472DFA7-C163-445A-83FE-79A20F0D1662}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EF61FF8-B964-4457-8A1F-CE3E6939F16E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EF61FF8-B964-4457-8A1F-CE3E6939F16E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EF61FF8-B964-4457-8A1F-CE3E6939F16E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EF61FF8-B964-4457-8A1F-CE3E6939F16E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{BC03F264-BD6C-4495-8DFC-8DFEC1C94A71} = {1F905661-B675-4BC8-96DF-DBF4A7BBA27A}
 		{BEBD30F2-E368-4DDD-9755-1B7B7ABAB6CA} = {1F905661-B675-4BC8-96DF-DBF4A7BBA27A}
 		{4E71E191-5B28-40BB-80A9-E73BF99D0E27} = {1F905661-B675-4BC8-96DF-DBF4A7BBA27A}
 		{8472DFA7-C163-445A-83FE-79A20F0D1662} = {97822908-59E6-4DD2-B0F6-2AB3A13D84E8}
+		{2EF61FF8-B964-4457-8A1F-CE3E6939F16E} = {1F905661-B675-4BC8-96DF-DBF4A7BBA27A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D2131E7D-711A-4149-8361-E8C25F4D88D5}
